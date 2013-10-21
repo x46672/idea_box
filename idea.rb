@@ -43,7 +43,7 @@ class Idea
 
   def self.find(id)
     raw_idea = find_raw_idea(id)
-    new(raw_idea[:title], raw_idea[:description])
+    new(raw_idea)
   end
 
   def self.find_raw_idea(id)
