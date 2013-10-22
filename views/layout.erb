@@ -1,19 +1,66 @@
 <html>
   <head>
-    <title>IdeaBox</title>
+    <title>Zoltar Machine Idea Box</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
     <!-- Optional theme -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+    
   </head>
   <body>
-    <div class = "navbar navbar-inverse">
+    <div class = "navbar navbar-inverse navbar-fixed-top">
+      <div class = "container">
+        
+        <a href = "#" class = "navbar-brand">Zoltar's Idea Box</a>
+        
+        <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+          <span class = "icon-bar"></span>
+          <span class = "icon-bar"></span>
+          <span class = "icon-bar"></span>
+        </button>
+        <div class = "collapse navbar-collapse navHeaderCollapse">
+          <ul class = "nav navbar-nav navbar-right">
+            <li class = "active"><a href = "#">Home</a></li>
+            <li><a href = "#">Blog</a></li>
+            <li class = "dropdown"> 
+              <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">Social Media <b class = "caret"></b></a>
+              <ul class = "dropdown-menu">
+                <li><a href = "#">Twitter</a></li>
+                <li><a href = "#">Facebook</a></li>
+                <li><a href = "#">Google+</a></li>
+                <li><a href = "#">Instagram</a></li>
+              </ul>
+            </li>
+            <li><a href = "#">About</a></li>
+            <li><a href = "#">Contact</a></li>
+          </ul>
+        </div>        
+      </div>
     </div>
+    <div class = "container" > 
+        <div class = "jumbotron">
+          <center><h1>Give Me An Idea</h1>
+          <p>This site is only for the purpose of storing amazing ideas</p>
+          <form action='/' method='POST'>
+            <input type='text' name='idea[title]'/><br/>
+            <textarea name='idea[description]'></textarea><br/>
+            <input type='submit'/>
+          </form></center>
+        </div>
     <h1>IdeaBox</h1>
     <%= yield %>
-    <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src = "js/bootstrap.js"></script>  
+    <div class = "navbar navbar-default navbar-fixed-bottom">
+    
+      <div class = "container">
+        <p class = "navbar-text pull-left">Site Built By Kevin Powell</p>
+        <a href = "https://github.com/x46672" class = "navbar-btn btn-danger btn pull-right">Subscribe on GitHub</a>
+      </div>
+    
+    </div>
+    <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>d
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src = "/js/bootstrap.js"></script>  
   </body>
 </html>
