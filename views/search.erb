@@ -1,0 +1,15 @@
+<h1>Search Results</h1>
+  <ul>
+    <% ideas.each_with_index do |idea, id| %>
+      <li>
+        <h5>title: <%= idea.title %></h5>
+        <p>Idea: <%= idea.description %></p>
+        <p>Tags: <%= idea.tag %></p>
+        <a href="/<%= id %>/edit">Edit</a>
+        <form action="/<%= id %>" method="POST">
+          <input type="hidden" name="_method" value="DELETE">
+          <input type="submit" value="delete"/>
+        </form>
+      </li>
+    <% end %>
+  </ul>

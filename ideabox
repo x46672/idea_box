@@ -1,7 +1,5 @@
 ---
 ideas:
-- :title: New Idea Title
-  :description: This is the new Idea message!NIIIJIIHHHIHI
 - :title: jump rope1
   :description: "jump all over this rope\r\n"
 - :title: Here is an idea
@@ -20,3 +18,25 @@ ideas:
   :description: does it pass
 - :title: here is an idea
   :description: here hhfggh
+- :title: Best Idea Ever
+  :description: This idea is going to make me millions of dollars
+- :title: title here
+  :description: here is an idea
+- :title: Skating rink
+  :description: Made of ice
+  :tags: 
+- :title: herer
+  :description: hahefhdh
+  :tag: funnnn
+- :title: does this still work
+  :description: work
+  :tag: please word
+- :title: Here is an idea
+  :description: idea
+  :tag: here is a tab
+- :title: Here is another idea titile that we can put in here
+  :description: Here is another idea description
+  :tag: 'fun, map, '
+- :title: New lighting fixture
+  :description: I want to put up lights that will run off solar power!
+  :tag: lights, solar, renewable
