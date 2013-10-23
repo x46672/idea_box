@@ -14,7 +14,7 @@
             <div class = "col-md-3">
                 
                 <h3><a href = "#">WHAT'S YOUR IDEA</a></h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                <p>This part of the text tells you what an idea is.  Its dreamed up in your head then given to your brain so that you can send it to your mouth so you can say it outloud.  Once you say it outloud you can send it your hands so they can write it down</p>
         <a href = "#" class = "btn btn-default">Read More</a>
                 
             </div>
@@ -22,7 +22,7 @@
             <div class = "col-md-3">
                 
                 <h3><a href = "#">WRITE IT DOWN</a></h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                <p>This part of the text tells you what an idea is.  Its dreamed up in your head then given to your brain so that you can send it to your mouth so you can say it outloud.  Once you say it outloud you can send it your hands so they can write it down</p>
         <a href = "#" class = "btn btn-default">Read More</a>
                 
             </div>
@@ -30,7 +30,7 @@
             <div class = "col-md-3">
                 
                 <h3><a href = "#">SUBMIT YOUR IDEA</a></h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                <p>This part of the text tells you what an idea is.  Its dreamed up in your head then given to your brain so that you can send it to your mouth so you can say it outloud.  Once you say it outloud you can send it your hands so they can write it down</p>
         <a href = "#" class = "btn btn-default">Read More</a>
                 
             </div>
@@ -38,7 +38,7 @@
             <div class = "col-md-3">
                 
                 <h3><a href = "#">CHECK BACK</a></h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                <p>This part of the text tells you what an idea is.  Its dreamed up in your head then given to your brain so that you can send it to your mouth so you can say it outloud.  Once you say it outloud you can send it your hands so they can write it down</p>
         <a href = "#" class = "btn btn-default">Read More</a>
                 
             </div>
@@ -55,8 +55,8 @@
           <ul class="ideas">
             <% ideas.each_with_index do |idea, id| %>
               <li class="panel panel-default idea" >
-                <h5>Title: <%= idea.title %></h5>
-                <p>Idea: <%= idea.description %></p>
+                <h5>Title: <%= idea.title[0..15] %></h5>
+                <p>Idea: <%= idea.description[0..30] %></p>
                 <p>Tags: <%= idea.tag %></p>
                 <a href="/<%= id %>/edit">Edit</a>
                 <form action="/<%= id %>" method="POST">
