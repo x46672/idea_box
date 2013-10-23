@@ -1,7 +1,5 @@
 ---
 ideas:
-- :title: jump rope1
-  :description: "jump all over this rope\r\n"
 - :title: Here is an idea
   :description: Look how good this idea is
 - :title: Punk ass
@@ -38,5 +36,6 @@ ideas:
   :description: Here is another idea description
   :tag: 'fun, map, '
 - :title: New lighting fixture
-  :description: I want to put up lights that will run off solar power!
-  :tag: lights, solar, renewable
+  :description: I want to put up lights that will run off solar power! let see if
+    this works
+  :tags: 
